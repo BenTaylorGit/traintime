@@ -1,4 +1,3 @@
-
 var config = {
    
         apiKey: "AIzaSyAofkZwpLbzKA_YCEy0K3KBO3owFuhXCLs",
@@ -13,4 +12,26 @@ var config = {
   
   firebase.initializeApp(config);
   
+
+  $("#add-btn").on("click", function(event) {
+
+    event.preventDefault();
+
+    var trainName = $("#user-train-name")
+      .val()
+      .trim();
+    var destination = $("#user-destination-name")
+      .val()
+      .trim();
+    var firstTrain = $("#user-train-time")
+      .val()
+      .trim();
+    var frequency = $("#user-frequency-time")
+      .val()
+      .trim();
+ console.log(trainName);
+  console.log(destination);
+  console.log(firstTrain);
+  console.log(frequency);
   
+  });
