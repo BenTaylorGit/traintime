@@ -34,7 +34,7 @@
             Current Train Schedule
           </div>
           <div class="card-body">
-            <table class="table table-hover" id='train-table'>
+            <table class="table" id='train-sched'>
               <thead>
                 <tr>
                   <th>Train Name</th>
@@ -49,6 +49,32 @@
             </table>
           </div>
         </div>
+        <div class="card mt-2">
+            <div class="card-header">
+              Add Train
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="train-name">Train Name</label>
+                  <input type="text" class="form-control" id="user-train-name">
+                </div>
+                <div class="form-group">
+                  <label for="destination-name">Destination</label>
+                  <input type="text" class="form-control" id="user-destination-name">
+                </div>
+                <div class="form-group">
+                  <label for="train-time">First Train Time (HH:mm - military time)</label>
+                  <input type="text" class="form-control" id="user-train-time">
+                </div>
+                <div class="form-group">
+                  <label for="frequency-time">Frequency (min)</label>
+                  <input type="text" class="form-control" id="user-frequency-time">
+                </div>
+                <button type="submit" class="btn btn-primary" id="add-btn">Submit</button>
+              </form>
+            </div>
+          </div>
       </div>
     </div>
   </div>
